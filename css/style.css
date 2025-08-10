@@ -1,10 +1,10 @@
 :root {
     --light-red: hsl(0, 100%, 67%);
     --orange-yellow: hsl(39, 100%, 56%);
-    --green-teal:  hsl(166, 100%, 37%);
+    --green-teal: hsl(166, 100%, 37%);
     --cobalt-blue: hsl(234, 85%, 45%);
     --light-slate-blue: hsl(252, 100%, 67%);
-    --light-royal-blue: hsl(241, 81%, 54%)
+    --light-royal-blue: hsl(241, 81%, 54%);
     --violet-blue: hsla(256, 72%, 46%, 1);
     --persian-blue: hsla(241, 72%, 46%, 0);
     --white: hsl(0, 0%, 100%);
@@ -14,4 +14,41 @@
 
 }
 
+body {
+    background-color: var(--pale-blue);
+    font-family: "Hanken Grotesk", sans-serif;
+    min-height: 100vh;
+}
 
+.container {
+    display: flex;
+}
+
+.container .result {
+    background-color: var(--light-royal-blue);
+    text-align: center;
+    border-radius: 1rem;
+    padding: 1rem;
+    color: var(--white);
+}
+
+.container .score {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: var(--violet-blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .score .score-value {
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+.container .score .score-max {
+    font-size: .75rem;
+    color: var(--light-lavander);
+}
